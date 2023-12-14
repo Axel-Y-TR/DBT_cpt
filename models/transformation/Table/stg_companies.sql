@@ -1,3 +1,5 @@
+{{config(materialized = 'table')}}
+
 with entreprises as (
     select *
     from companies

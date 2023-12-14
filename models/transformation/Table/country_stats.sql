@@ -1,3 +1,5 @@
+{{config(materialized = 'table')}}
+
 with entreprises as ( 
     SELECT *
     FROM {{ ref('stg_companies') }}
