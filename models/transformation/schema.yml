@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: stg_companies
+    description: "test company data"
+    columns:
+      - name: domain
+        description: "domain has to be unique and exist"
+        tests:
+          - unique
+          - not_null
+
+  - name: country_stats
+    description: "check"
+    columns:
+      - name: country
+        description: "have to exist"
+        tests:
+          - not_null
+  
